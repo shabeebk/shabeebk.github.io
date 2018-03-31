@@ -2,49 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.hero-image {
-  background-image: url("images/bg.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-</style>
+<link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-
+<!--
+<div id="loader">
+  <img id="loader-image" src="images/loader.gif" alt="Loading..." />
+</div>
+-->
 <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px">I am Shabeeb Khalid</h1>
@@ -55,6 +21,25 @@ body, html {
   </div>
 </div>
 
+<!--
+<script language="javascript" type="text/javascript">
+     $(window).load(function() {
+     $('#loader').hide();
+  });
+-->
+
+$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).remove(); //makes page more lightweight
+  });
+}
+
+</script>
 </body>
 </html>
 
