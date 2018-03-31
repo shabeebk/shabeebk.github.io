@@ -3,15 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-<!--
-<div id="loader">
-  <img id="loader-image" src="images/loader.gif" alt="Loading..." />
-</div>
--->
+
 <div class="hero-image">
+
   <div class="hero-text">
     <h1 style="font-size:50px">I am Shabeeb Khalid</h1>
     <p>And I'm a Programmer</p>
@@ -20,26 +16,7 @@
     </form>
   </div>
 </div>
-
-<!--
-<script language="javascript" type="text/javascript">
-     $(window).load(function() {
-     $('#loader').hide();
-  });
--->
-
-$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
-$(window).on('load', function(){
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).remove(); //makes page more lightweight
-  });
-}
-
-</script>
 </body>
+</script>
 </html>
 
