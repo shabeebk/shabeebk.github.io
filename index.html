@@ -2,33 +2,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+<title>AWS Architect, Programmer Portfolio</title>
 <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
 </head>
 <body>
-<div id="load" class="load"></div>
+
 <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px">I am Shabeeb Khalid</h1>
     <p>And I'm a Programmer</p>
-    <form method="post" action="mailto:convey2shabeeb@gmail.com" > 
-     <button>Hire me</button>
-    </form>
   </div>
 </div>
+
 </body>
-<script>
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-       document.getElementById('hero-image').style.visibility="hidden";
-  } else if (state == 'complete') {
-      setTimeout(function(){
-         document.getElementById('interactive');
-         document.getElementById('load').style.visibility="hidden";
-         document.getElementById('hero-image').style.visibility="visible";
-      },1000);
-  }
-}
-</script>
 </html>
 
