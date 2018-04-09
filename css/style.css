@@ -40,6 +40,11 @@ body, html {
   height: 100%;
 }
 
+.footer {
+  padding: 25px;
+  text-align: center;
+}
+
 .hero-title {
   position: absolute;
   top: 50%;
@@ -78,6 +83,10 @@ body, html {
     top: 5%;
     left: 90%;
   }
+
+  .footer {
+    padding: 5px;
+}
 }
  
 /* Overlay styling */
